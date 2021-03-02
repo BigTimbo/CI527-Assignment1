@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>placeholder Contact Form</title>
+        <link href="css/normalize.css" rel="stylesheet" />
+        <link href="css/stylesheet.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <script src="js/contact.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header start -->
+            <div class="headergrid">
+                <header>
+                    <nav>
+                        <a href="index.html" class="nav">HOME</a>
+                        <div class="fltrt">
+                            <a href="search.html" class="headernav">SEARCH V&A</a>
+                            <p class="navbreak">.</p>
+                            <a href="contact.html" class="headernav">CONTACT</a>
+                            <div class="socialblock">
+                                <div class="dropdown">
+                                    <img class="navmenu" src="images/icons/menu-icon.png" alt="Menu Icon" />
+                                    <div class="dropdown-content">
+                                        <a href="search.html">Search V&A</a>
+                                        <br />
+                                        <a href="contact.html">Contact</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+            <!-- Header end -->
+            <!-- Left start -->
+            <div class="leftgrid">
+            </div>
+            <!-- Left end -->
+            <!-- right start -->
+            <div class="rightgrid">
+            </div>
+            <!-- right end -->
+            <!-- Body start -->
+            <div class="bodygrid">
+                <div class="formcontainer">  
+                    <div id="ok">
+                        <p>Successfully Submitted!</p>
+                    </div>
+                    <div id="loading">
+                        <img src="images/loading.gif" alt="loading gif">
+                    </div>
+                  <form id="form" name="form">
+                    <h3>- CONTACT US -</h3>
+                    <h4>Contact me today, and I will reply as soon as possible!</h4>
+                    <fieldset>
+                        <legend>Name</legend>
+                        <input placeholder="Your name" type="text" tabindex="1" name="fullname" id="fullname" autofocus>
+                        <span class="name_error"></span>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Email</legend>
+                        <input placeholder="Your Email Address" type="text" name="email" id="email" tabindex="2">
+                        <span class="email_error"></span>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Reason for contacting</legend>
+                        <select name="reason">
+                            <option value = "1">General Enquires</option>
+                            <option value = "4">Technical Support</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Subject</legend>
+                        <input placeholder="Type your subject here...." type="text" tabindex="3" name="subject" id="subject">
+                        <span class="subject_error"></span>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Message</legend>
+                        <textarea placeholder="Type your Message Here...." type="text" name="query" id="query" tabindex="4"></textarea>
+                        <span class="message_error"></span>
+                    </fieldset>
+                        <input name="btnSubmit" type="submit" id="contact-submit" value="Submit" />
+                  </form>
+                </div>
+            </div>
+            <!-- Body end -->
+            <!-- Footer start -->
+            <div class="footergrid">
+                <footer>
+                    <a href="index.html">Home</a>
+                    <p class="navbreak">.</p>
+                    <a href="search.html">Search V&A</a>
+                    <p class="navbreak">.</p>
+                    <a href="contact.html">Contact</a>
+                    <p>© 2021 Tim Amis</p>
+                </footer>
+            </div>
+            <!-- Footer end -->
+        </div>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tim's V&A API</title>
+        <link href="css/normalize.css" rel="stylesheet" />
+        <link href="css/stylesheet.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <script src="js/fadein.js"></script>
+        <script src="js/search.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header start -->
+            <div class="headergrid">
+                <header>
+                    <nav>
+                        <a href="index.html" class="nav">HOME</a>
+                        <div class="fltrt">
+                            <a href="search.html" class="headernav">SEARCH V&A</a>
+                            <p class="navbreak">.</p>
+                            <a href="contact.html" class="headernav">CONTACT</a>
+                            <div class="socialblock">
+                                <div class="dropdown">
+                                    <img class="navmenu" src="images/icons/menu-icon.png" alt="Menu Icon" />
+                                    <div class="dropdown-content">
+                                        <a href="search.html">Search V&A</a>
+                                        <br />
+                                        <a href="contact.html">Contact</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+            <!-- Header end -->
+            <!-- Left start -->
+            <div class="leftgrid">
+                <img id="logo-left" src="images/V&A-logo.png" alt="V&A Logo Left" />
+            </div>
+            <!-- Left end -->
+            <!-- right start -->
+            <div class="rightgrid">
+                <img id="logo-right" src="images/V&A-logo.png" alt="V&A Logo Right" />
+            </div>
+            <!-- right end -->
+            <!-- Body start -->
+            <div class="bodygrid">
+                <div id="wrapper">
+                    <form>
+                        <legend>Search</legend>
+                        <input type="text" id="searchTerm"></input>
+                        <button id="searchButton">Search</button>
+                    </form>
+                    <div id="loading">
+                        <img src="images/loading.gif" alt="loading gif">
+                    </div>
+                    <div id="results"></div>
+                </div>
+            </div>
+            <!-- Body end -->
+            <!-- Footer start -->
+            <div class="footergrid">
+                <footer>
+                    <a href="index.html">Home</a>
+                    <p class="navbreak">.</p>
+                    <a href="search.html">Search V&A</a>
+                    <p class="navbreak">.</p>
+                    <a href="contact.html">Contact</a>
+                    <p>© 2021 Tim Amis</p>
+                </footer>
+            </div>
+            <!-- Footer end -->
+        </div>
+    </body>
+</html>
