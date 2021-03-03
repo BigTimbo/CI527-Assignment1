@@ -15,12 +15,27 @@ window.addEventListener('load', () => {
                     document.querySelector('#loading').style.display = "initial";
                 }
                 document.querySelector('#loading').style.display = "none";
-                document.querySelector('#results').style.display = "initial";
                 for (let i = 0; i < records.length; i++) {
                     let record = records[i];
-                    let p = document.createElement('p');
-                    p.textContent = 'Title: ' + record.fields.title;
-                    results.appendChild(p);
+                    let li = document.createElement('li');
+                    li.className = 'card';
+                    results.appendChild(li);
+                    let div = document.createElement('div');
+                    div.className = 'card-content';
+                    li.appendChild(div);
+                    let a = document.createElement('a');
+                    a.href = "search.html";
+                    div.appendChild(a);
+                    let img = document.createElement('img');
+                    let source = record.fields.primary_image_id;
+                    img.src = "http://media.vam.ac.uk/media/thira/collection_images/" + source.substring(0, 6) + "/" + source + ".jpg";
+                    a.appendChild(img);
+                    let pTitle = document.createElement('p');
+                    pTitle.textContent = record.fields.title;
+                    a.appendChild(pTitle);
+                    let pArtist = document.createElement('p');
+                    pArtist.textContent = record.fields.artist;
+                    a.appendChild(pArtist);
                 }
             }else{
                 // error condtion
