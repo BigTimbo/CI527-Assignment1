@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
 		subject_error.textContent = "";
 		message_error.textContent = "";
 		// name validation
-		if (name.value == "") {
+		if (name.value === "") {
 			name_error.textContent = "A name is required.";
 		}else{
 			// check if name only contains letters and spaces
