@@ -26,7 +26,7 @@ window.addEventListener("load", () => {
 			}
 		}
 		// email validation
-		if (email.value == "") {
+		if (email.value === "") {
 			email_error.textContent = "An email is required.";
 		}else{
 			// check if email only contains letters and spaces
@@ -35,14 +35,14 @@ window.addEventListener("load", () => {
 			}
 		}
 		// subject validation
-		if (subject.value == "") {
+		if (subject.value === "") {
 			subject_error.textContent = "a subject is required.";
 		}
 		// message validation
-		if (message.value == "") {
+		if (message.value === "") {
 			message_error.textContent = "A message is required.";
 		}
-		if(message_error.textContent == "" && subject_error.textContent == "" && name_error.textContent == "" && email_error.textContent == ""){
+		if(message_error.textContent === "" && subject_error.textContent === "" && name_error.textContent === "" && email_error.textContent === ""){
 			let ok = document.querySelector('#ok');
 			document.querySelector('#form').style.display = "none";
 			document.querySelector('#loading').style.display = "initial";
@@ -53,7 +53,7 @@ window.addEventListener("load", () => {
 			let xhr = new XMLHttpRequest();
 			let data = "email=" + encodeURIComponent(email.value.trim()) + "&subject=" + encodeURIComponent(subject.value.trim()) + "&message=" + encodeURIComponent(message.value.trim());
 			xhr.addEventListener('load', () => {
-				if (xhr.status == 201) {
+				if (xhr.status === 201) {
 					ok.textContent += xhr.responseText;
 				}
 			});
