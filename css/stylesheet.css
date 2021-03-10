@@ -18,7 +18,7 @@ header {
 .nav:hover {
   color: black;
 }
-.headernav {
+.headerNav {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
 	font-size: 24px;
@@ -27,11 +27,11 @@ header {
 	text-decoration: none;
 	padding-right: 20px;
 }
-.headernav:hover {
+.headerNav:hover {
 	color: black;
 	text-decoration: underline;
 }
-.navbreak{
+.navBreak{
   padding-right: 20px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
@@ -39,7 +39,7 @@ header {
 	color: #3b4d53;
   display: inline;
 }
-.navmenu {
+.navMenu {
   cursor: pointer;
   padding-right: 2px;
   height: 30px;
@@ -83,10 +83,13 @@ header {
   border-radius: 6px;
   background-color: #f2f2f2;
 }
-.bodygrid{
+#wrapper h1{
+  display: none;
+}
+.bodyGrid{
 	position: relative;
 }
-.indexlogo{
+.indexLogo{
   position: absolute;
   width: 80%;
   top: 50%;
@@ -119,10 +122,10 @@ input[type="submit"]{
   margin-right: auto;
 }
 /* ---------------- Left Grid Styling -------------- */
-.leftgrid{
+.leftGrid{
 	position: relative;
 }
-.leftgrid img{
+.leftGrid img{
 	width: 80%;
   position: absolute;
   top: 50%;
@@ -141,10 +144,10 @@ input[type="submit"]{
 	transition: opacity 3.3s ease-in-out;
 }
 /* ---------------- Right Grid Styling -------------- */
-.rightgrid{
+.rightGrid{
 	position: relative;
 }
-.rightgrid img{
+.rightGrid img{
 	width: 80%;
   position: absolute;
   top: 50%;
@@ -167,21 +170,21 @@ footer {
   width:100%;
   height:100px;
 }
-.footergrid{
+.footerGrid{
 	padding: 10px;
   margin-top: 15px;
 	background-color: white;
 }
-.footergrid a{
+.footerGrid a{
 	font-family: 'Josefin Sans', sans-serif;
   text-decoration: none;
   padding-right: 10px;
   color: #3b4d53;
 }
-.footergrid p{
+.footerGrid p{
 	font-family: 'Josefin Sans', sans-serif;
 	padding-right: 10px;
-	color: #e4e2e2;
+	color: #3b4d53;
 }
 /* ----------------- General Styling --------------- */
 html, body {
@@ -202,7 +205,7 @@ h2 {
   text-align: center;
   margin: auto;
 }
-.fltrt {
+.floatRight {
   float: right;
 }
 .fltlt {
@@ -215,7 +218,7 @@ h2 {
   height: 5vh;
 }
 /* ---------------------- Form Styling ------------------- */
-.formcontainer {
+.formContainer {
   padding:0;
   box-sizing:border-box;
   -webkit-box-sizing:border-box;
@@ -227,7 +230,6 @@ h2 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 12px;
   line-height:30px;
-  color:#777;
   max-width:400px;
   width:100%;
   margin:0 auto;
@@ -236,6 +238,9 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+legend{
+  width: 100%;
 }
 #loading, #ok{
   display: none;
@@ -254,14 +259,14 @@ h2 {
   padding:20px;
   margin:50px 0;
 }
-#form h3 {
+#form h2 {
   color: #3b4d53;
   font-weight: bold;
   display: block;
   text-align: center;
   font-size: 30px;
 }
-#form h4 {
+#form h3 {
   margin:5px 0 15px;
   display:block;
   font-size:13px;
@@ -364,10 +369,10 @@ fieldset {
   transform: rotate(45deg);
   cursor: pointer;
 }
-#modalform {
+#modalForm {
   display: none;
 }
-#modalform h3 {
+#modalForm h3 {
   color: #3b4d53;
   font-weight: bold;
   display: block;
@@ -410,19 +415,19 @@ fieldset {
 	text-decoration: none;
 }
 /* ------------- Responsivety Styling --------------------- */
-.headergrid {
+.headerGrid {
   grid-area: header;
 }
-.leftgrid {
+.leftGrid {
   grid-area: left;
 }
-.rightgrid {
+.rightGrid {
   grid-area: right;
 }
-.bodygrid{
+.bodyGrid{
   grid-area: body;
 }
-.footergrid {
+.footerGrid {
   grid-area: footer;
 }
 .container {
@@ -450,7 +455,7 @@ fieldset {
   .card{
     width: 33.33%;
   }
-  .navmenu {
+  .navMenu {
     display:none;
   }
 }
@@ -459,19 +464,19 @@ fieldset {
 	.nav{
 		letter-spacing: 0;
 	}
-  .leftgrid {
+  .leftGrid {
     display:none;
   }
-  .rightgrid {
+  .rightGrid {
     display:none;
   }
-  .headernav {
+  .headerNav {
     display:none;
   }
-  .navbreak{
+  .navBreak{
     display:none;
   }
-  .formcontainer{
+  .formContainer{
     position: initial;
     top: 0;
     left: 0;
@@ -486,7 +491,7 @@ fieldset {
   .nav{
   	font-size: 20px;
   }
-  .socialblock a{
+  .socialBlock a{
   	font-size: 0;
   }
   .dropdown a{
@@ -501,7 +506,7 @@ fieldset {
   }
 }
 @media screen and (max-height: 900px) {
-  .formcontainer{
+  .formContainer{
     position: initial;
     top: 0;
     left: 0;

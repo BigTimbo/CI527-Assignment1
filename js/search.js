@@ -108,14 +108,16 @@ window.addEventListener('load', () => {
                         a.appendChild(pArtist);
                         // create the modal content
                         let form = document.createElement('form');
-                        form.id = 'modalform';
+                        form.id = 'modalForm';
                         modalContent.appendChild(form);
                         let fieldset = document.createElement('fieldset');
                         form.appendChild(fieldset);
                         // add the previously validated title content to the modal
                         let h3 = document.createElement('h3');
+                        let legend = document.createElement('legend');
                         h3.textContent = pTitle.textContent;
-                        fieldset.appendChild(h3);
+                        legend.appendChild(h3);
+                        fieldset.appendChild(legend);
                         // add the previously validated artist content to the modal
                         let modalpArtist = document.createElement('p');
                         modalpArtist.textContent = "Artist: " + pArtist.textContent;
@@ -147,19 +149,19 @@ window.addEventListener('load', () => {
                     }
                     // target the modal elements
                     let closeModal = document.querySelector('.modal-close');
-                    let modalbg = document.querySelector('.bg-modal');
+                    let modalBG = document.querySelector('.bg-modal');
                     let VAItems = document.querySelectorAll('.VAItems');
-                    let itemForms = document.querySelectorAll('#modalform');
+                    let itemForms = document.querySelectorAll('#modalForm');
                     // for each of the V&A search items add these event listeners
                     for (let i=0; i < VAItems.length; i++) {
                         // when a V&A item is clicked, open it's modal
                         VAItems[i].addEventListener("click", function(){
-                            modalbg.style.display = 'flex';
+                            modalBG.style.display = 'flex';
                             itemForms[i].style.display = 'initial';
                         });
                         // if the modal cross is clicked then close (hide) the modal
                         closeModal.addEventListener("click", function(){
-                            modalbg.style.display = 'none';
+                            modalBG.style.display = 'none';
                             itemForms[i].style.display = 'none';
                         });
                     }
