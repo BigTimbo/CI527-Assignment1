@@ -249,7 +249,7 @@ legend{
   color: green;
 }
 .name_error, .email_error, .subject_error, .message_error, .username_error, .password_error, .passwordrepeat_error{
-  color: red;
+  color: darkred;
 }
 #form input[type="text"], #form input[type="password"], #form input[type="email"], #form select, #form textarea, #form input[type="submit"] {
   font:400 20px  'Josefin Sans', sans-serif;
