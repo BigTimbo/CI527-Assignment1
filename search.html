@@ -49,8 +49,19 @@
             <!-- Body start -->
             <div class="bodygrid">
                 <form id="form">
-                    <h1>Search</h1>
-                    <input type="text" id="searchTerm"/>
+                    <h1>Search V&A</h1>
+                    <fieldset>
+                        <label for="searchCat">Search Category:</label>
+                            <select name="reason" id="searchCat">
+                                <option value = "1">General Search</option>
+                                <option value = "2">Object Type and Title</option>
+                                <option value = "3">People</option>
+                                <option value = "4">Places</option>
+                                <option value = "5">Materials or Techniques</option>
+                            </select>
+                        <label for="searchTerm">Search:</label>
+                        <input type="text" id="searchTerm"/>
+                    </fieldset>
                     <input name="btnSubmit" type="submit" id="searchButton" value="Search" />
                 </form>
                 <div id="loading">
@@ -71,6 +82,11 @@
                 </footer>
             </div>
             <!-- Footer end -->
+            <div class="bg-modal">
+                <div class="modal-content">
+
+                </div>
+            </div>
         </div>
     </body>
 </html>

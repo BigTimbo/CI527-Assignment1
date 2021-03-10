@@ -199,8 +199,8 @@ h1{
  	max-width: 100%;
 }
 h2 {
-  margin-top: 0;
   text-align: center;
+  margin: auto;
 }
 .fltrt {
   float: right;
@@ -330,156 +330,51 @@ fieldset {
   margin-left: auto;
   margin-right: auto;
 }
-/* ---------------------- student Grid ------------------- */
-.student-content{
-  display: grid;
-	font-family: 'Josefin Sans', sans-serif;
-  font-weight: bold;
- 	color: #3b4d53;
+/* ---------------------- Modal Styling ------------------- */
+.VAItems{
+  cursor: pointer;
 }
-.student-content-name{
-  font-size: 3vw;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  grid-column-start: 3;
-  grid-column-end: 7;
-  margin-bottom: 0;
-  margin-top: 0.5em;
-}
-.student-content-img{
+.bg-modal{
   width: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
-  grid-row-start: 2;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-.student-content-blurb{
-  width: 100%;
-  display: grid;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  justify-content: center;
   align-items: center;
-  grid-row-start: 2;
-  grid-row-end: 2;
-  grid-column-start: 3;
-  grid-column-end: 7;
-  text-align: justify;
-}
-.student-content-stitle{
-  font-size: 2vw;
-  grid-row-start: 3;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 5;
-  margin-bottom: 0;
-}
-.student-content-scontent{
-  grid-row-start: 4;
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 5;
-  padding-left: 0;
-  list-style-type: none;
-  display: grid;
-}
-.student-content-scontent li{
-  position: relative;
-  margin-bottom: 1vh;
-}
-.student-content-scontent a{
-  text-decoration: none;
-  color: #3b4d53;
-}
-.student-content-scontent img{
-  width: 15%;
-}
-.student-content-scontent p{
-  margin: 0;
-  left: 18%;
-  top: 30%;
-  position: absolute;
-}
-.student-content-rtitle{
-  font-size: 2vw;
-  grid-row-start: 3;
-  grid-row-end: 3;
-  grid-column-start: 5;
-  grid-column-end: 7;
-  margin-bottom: 0;
-}
-.student-content-rcontent{
-  grid-row-start: 4;
-  grid-row-end: 4;
-  grid-column-start: 5;
-  grid-column-end: 7;
-  }
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-/* Hide the images by default */
-.mySlides {
   display: none;
 }
-.slideIMG{
-  width: 100%
+.modal-content{
+  width: 800px;
+  height: 500px;
+  background-color: white;
+  border-radius: 4px;
+  position: relative;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  display: grid;
 }
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
+.modal-close{
   position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-/* The dots/bullets/indicators */
-.dot {
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg);
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
 }
-.active, .dot:hover {
-  background-color: #717171;
+#modalform {
+  display: none;
 }
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+#modalform h3 {
+  color: #3b4d53;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  font-size: 30px;
 }
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-/* --------------- Student/Marketplace Flexbox ------------------ */
+/* --------------- cards styling ------------------ */
 .cards {
   display: flex;
   flex-wrap: wrap;
