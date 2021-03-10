@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {
 	let submit = document.querySelector('#contact-submit');
-	let name = document.querySelector('#fullname');
+	let name = document.querySelector('#fullName');
 	let name_error = document.querySelector('.name_error');
 	let email = document.querySelector('#email');
 	let email_error = document.querySelector('.email_error');
